@@ -40,5 +40,24 @@ const loadPhoneDetail = slug => {
   const url =`https://openapi.programming-hero.com/api/phone/${slug}`;
   fetch(url)
   .then (res => res.json())
-  .then (data =>console.log(data) )
+  .then (data => displayPhoneDetail(data.data) )
+}
+const displayPhoneDetail = data =>{
+  console.log (data);
+  const phoneDetails = document.getElementById('phone-details');
+  const div = document.createElement('div');
+  div.classList.add('card');
+  div.innerHTML =`
+  <img src="${data.image}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title fw-bold fs-3"> Name :${data.name}</h5>
+    <p class="card-text fw-bold"> ReleaseDate : ${data.releaseDate}</p>
+    <p class="card-text fw-bold"> ReleaseDate :${data.mainFeatures}</p>
+    
+  </div>
+
+
+
+  `;
+  phoneDetails.appendChild(div);
 }
