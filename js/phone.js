@@ -15,6 +15,7 @@ const searchPhone = () => {
     .then (data =>displaySearchResult (data.data));
 
 }
+//display search result
 const displaySearchResult = data => {
    const searchResult = document.getElementById('search-result');
    searchResult.textContent ='';
@@ -23,7 +24,7 @@ const displaySearchResult = data => {
     error.style.display ='block';
    }
    
-    data.forEach(data =>  {
+    data.slice(0,20).forEach(data =>  {
       //  console.log(data);
      const div = document.createElement('div');
      div.classList.add('col');
@@ -46,14 +47,15 @@ const displaySearchResult = data => {
   
 
 }
-
+//load Phone detail
 const loadPhoneDetail = slug => {
   console.log(slug);
   const url =`https://openapi.programming-hero.com/api/phone/${slug}`;
   fetch(url)
   .then (res => res.json())
-  .then (data => displayPhoneDetail(data.data) )
+  .then (data => displayPhoneDetail(data.data))
 }
+//display phone details here
 const displayPhoneDetail = data =>{
   console.log (data);
   const phoneDetails = document.getElementById('phone-details');
