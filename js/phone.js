@@ -24,7 +24,7 @@ const displaySearchResult = data => {
    }
    
     data.forEach(data =>  {
-      // console.log(data);
+      //  console.log(data);
      const div = document.createElement('div');
      div.classList.add('col');
      div.innerHTML = `
@@ -66,13 +66,24 @@ const displayPhoneDetail = data =>{
     <h5 class="card-title fw-bold fs-3"> Name :${data.name}</h5>
     <p class="card-text fw-bold"> Brand :${data.brand}</p>
     <p class="card-text fw-bold"> ReleaseDate : ${data.releaseDate?data.releaseDate:'Comming soon'}</p>
-    <p class="card-text fw-bold"> Mainfeatures:</p>
+    <p class="card-text fw-bold text-primary"> Mainfeatures:</p>
 
     <p class="card-text fw-bold"> Storge :${data.mainFeatures.storage}</p>
     <p class="card-text fw-bold"> DisplaySize:${data.mainFeatures.displaySize}</p>
     <p class="card-text fw-bold"> ChipSet :${data.mainFeatures.chipSet}</p>
     <p class="card-text fw-bold"> Memory :${data.mainFeatures.memory}</p>
-    <p class="card-text fw-bold"> Storge :${data.mainFeatures.storage}</p>
+    
+    <p class="card-text fw-bold text-primary"> Sensors Info:</p>
+    <p class="card-text fw-bold"> Sensor :${data.mainFeatures.sensors}</p>
+    <p class="card-text fw-bold text-primary"> Others Information:</p>
+    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
+    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
+    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
+    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
+    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
+    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
+
+
     
   </div>
 
