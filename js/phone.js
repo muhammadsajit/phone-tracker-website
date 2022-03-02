@@ -65,7 +65,7 @@ const displayPhoneDetail = data =>{
   <div class="card-body">
     <h5 class="card-title fw-bold fs-3"> Name :${data.name}</h5>
     <p class="card-text fw-bold"> Brand :${data.brand}</p>
-    <p class="card-text fw-bold"> ReleaseDate : ${data.releaseDate}</p>
+    <p class="card-text fw-bold"> ReleaseDate : ${data.releaseDate?data.releaseDate:'Comming soon'}</p>
     <p class="card-text fw-bold"> Mainfeatures:</p>
 
     <p class="card-text fw-bold"> Storge :${data.mainFeatures.storage}</p>
