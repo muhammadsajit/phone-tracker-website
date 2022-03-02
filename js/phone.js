@@ -31,7 +31,7 @@ const displaySearchResult = data => {
      div.innerHTML = `
       <div 
       class="card">
-         <img src="${data.image}" class="card-img-top" alt="...">
+         <img src="${data.image}" class="card-img-top img-fluid " alt="...">
           <div class="card-body">
             <h5 class="card-title"> Name :${data.phone_name}</h5>
             <p class="card-text"> Brand :${data.brand}</p>
@@ -63,7 +63,7 @@ const displayPhoneDetail = data =>{
   const div = document.createElement('div');
   div.classList.add('card');
   div.innerHTML =`
-  <img src="${data.image}" class="card-img-top" alt="...">
+  <img src="${data.image}" class="card-img-top img-fluid" alt="...">
   <div class="card-body">
     <h5 class="card-title fw-bold fs-3"> Name :${data.name}</h5>
     <p class="card-text fw-bold"> Brand :${data.brand}</p>

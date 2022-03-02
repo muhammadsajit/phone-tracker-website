@@ -19,7 +19,7 @@
      <!-- Custom-CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body  class="container-md" >
     <!-- Heading start -->
 
         <h1 class="text-center fw-bold mt-3">Phone Tracker</h1>
@@ -28,7 +28,7 @@
     
       <!-- Phone search Area -->
          
-            <div class="input-group mb-5 w-50 mx-auto">
+            <div class="input-group mb-5 w-75 mx-auto ">
                 <input id="search-field" type="text" class="form-control" placeholder="Search phone items" aria-label="Recipient's username" aria-describedby="button-addon2">
                 <button onclick="searchPhone()" class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
               </div>
@@ -38,16 +38,23 @@
                      Phone items not found...
                 </p>
               </div>
+
+            
          
+                 
        <!-- single phone details -->
-      <div id="phone-details" class="w-50 mx-auto  mb-5">
+       <div id="phone-details" class=" w-75 mx-auto mb-5">
        
       </div>
-       
-        <!-- phone search result -->
-          <div id="search-result"  class="row row-cols-1 row-cols-md-3 g-5">
+         <section class="container">
+           <!-- phone search result -->
+          <div id="search-result"  class="row row-cols-1 row-cols-md-3 g-5 ">
             
           </div>
+         </section>
+        
+        
+     
 
 
     
