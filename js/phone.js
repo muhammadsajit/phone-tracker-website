@@ -52,7 +52,13 @@ const displayPhoneDetail = data =>{
   <div class="card-body">
     <h5 class="card-title fw-bold fs-3"> Name :${data.name}</h5>
     <p class="card-text fw-bold"> ReleaseDate : ${data.releaseDate}</p>
-    <p class="card-text fw-bold"> ReleaseDate :${data.mainFeatures}</p>
+    <p class="card-text fw-bold"> Mainfeatures:</p>
+
+    <p class="card-text fw-bold"> Storge :${data.mainFeatures.storage}</p>
+    <p class="card-text fw-bold"> DisplaySize:${data.mainFeatures.displaySize}</p>
+    <p class="card-text fw-bold"> ChipSet :${data.mainFeatures.chipSet}</p>
+    <p class="card-text fw-bold"> Memory :${data.mainFeatures.memory}</p>
+    <p class="card-text fw-bold"> Storge :${data.mainFeatures.storage}</p>
     
   </div>
 
