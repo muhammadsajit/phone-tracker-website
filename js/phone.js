@@ -76,12 +76,17 @@ const displayPhoneDetail = data =>{
     <p class="card-text fw-bold text-primary"> Sensors Info:</p>
     <p class="card-text fw-bold"> Sensor :${data.mainFeatures.sensors}</p>
     <p class="card-text fw-bold text-primary"> Others Information:</p>
-    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
-    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
-    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
-    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
-    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
-    <p class="card-text fw-bold"> WLAN :${data.others.WLAN}</p>
+    <p class="card-text fw-bold"> WLAN :${data?.others?.WLAN?data.others.WLAN :'Not Given..'}</p>
+    <p class="card-text fw-bold"> Bluetooth :${data?.others?.Bluetooth?data.others.Bluetooth :'Not Given..'}</p>
+    <p class="card-text fw-bold"> GPS :${data?.others?.GPS?data.others.GPS :'Not Given..'}</p>
+    <p class="card-text fw-bold"> NFC :${data?.others?.NFC?data.others.NFC :'Not Given..'}</p>
+    <p class="card-text fw-bold"> Radio :${data?.others?.Radio?data.others.Radio :'Not Given..'}</p>
+    
+    <p class="card-text fw-bold"> USB :${data?.others?.USB?data.others.USB :'Not Given..'}</p>
+  
+    
+  
+ 
 
 
     
